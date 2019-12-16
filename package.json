@@ -1,0 +1,27 @@
+{
+  "name": "threejs_vr_dev_box",
+  "version": "0.1.0",
+  "description": "A bolerplate project with hot swapping for testing things on Three.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo src/index.js:static/bundle.js --css style.css -d static -l -- -t brfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcopompili/threejs_vr_dev_box.git"
+  },
+  "author": "Marco Pompili (https://odd.red/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcopompili/threejs_vr_dev_box/issues"
+  },
+  "homepage": "https://github.com/marcopompili/threejs_vr_dev_box#readme",
+  "dependencies": {
+    "three": "^0.111.0"
+  },
+  "devDependencies": {
+    "acorn": "^7.1.0",
+    "brfs": "^2.0.2",
+    "browserify": "^16.5.0"
+  }
+}
