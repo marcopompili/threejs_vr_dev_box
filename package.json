@@ -20,7 +20,7 @@
     "three": "^0.111.0"
   },
   "devDependencies": {
-    "acorn": "^7.1.0",
+    "acorn": "^7.1.1",
     "brfs": "^2.0.2",
     "browserify": "^16.5.0"
   }
