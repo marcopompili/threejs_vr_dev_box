@@ -4,7 +4,7 @@
   "description": "A bolerplate project with hot swapping for testing things on Three.js",
   "main": "index.js",
   "scripts": {
-    "dev": "budo src/index.js:static/bundle.js --css style.css -d static -l -- -t brfs"
+    "dev": "./node_modules/.bin/budo src/index.js:static/bundle.js --css style.css -d static -l -- -t brfs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "acorn": "^7.1.1",
     "brfs": "^2.0.2",
-    "browserify": "^16.5.1"
+    "browserify": "^16.5.1",
+    "budo": "11.6.4"
   }
 }
