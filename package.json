@@ -4,7 +4,7 @@
   "description": "A bolerplate project with hot swapping for testing things on Three.js",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/budo src/index.js:static/bundle.js --css style.css -d static -l -- -t brfs"
+    "dev": "./node_modules/.bin/budo src/index.js:static/bundle.js --css style.css -d static -l -- -t brfs -t babelify --presets [ '@babel/preset-env' ]"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,11 @@
     "acorn": "^7.1.1",
     "brfs": "^2.0.2",
     "browserify": "^16.5.1",
-    "budo": "11.6.4"
+    "babelify": "10.0.0",
+    "@babel/core": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "budo": "11.6.4",
+    "gulp": "4.0.2",
+    "uglify-js": "3.10.0"
   }
 }

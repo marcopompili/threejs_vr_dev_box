@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Minified file
+3js_vr_dev_box.js
