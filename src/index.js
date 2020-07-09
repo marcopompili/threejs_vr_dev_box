@@ -5,8 +5,19 @@ let renderer, camera, scene
 let room
 
 function init() {
+
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('webgl2')
+
+    let parent
+    if (document.getElementById('experiment')) {
+        parent = document.getElementById('experiment')
+    } else {
+        parent = document.body
+    }
+
+    parent.appendChild(canvas)
+
     canvas.style.display = 'block'
 
     renderer = new THREE.WebGLRenderer({
@@ -16,8 +27,6 @@ function init() {
 
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
-
-    document.body.appendChild(canvas)
 
     camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000)
     camera.lookAt(0, 0, 0)
