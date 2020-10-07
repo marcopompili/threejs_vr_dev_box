@@ -1,5 +1,5 @@
 # threejs_vr_dev_box
-A bolerplate project with hot swapping for testing things on Three.js
+A boilerplate project with hot swapping for testing things on Three.js
 
 ## How to use
 You need to install `budo` as a global package or even better use your favourite distribution package system to install it.
