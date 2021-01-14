@@ -24,10 +24,10 @@
     "brfs": "^2.0.2",
     "browserify": "^16.5.1",
     "babelify": "10.0.0",
-    "@babel/core": "7.10.4",
-    "@babel/preset-env": "7.10.4",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
     "budo": "11.6.4",
     "gulp": "4.0.2",
-    "uglify-js": "3.10.0"
+    "uglify-js": "3.12.4"
   }
 }
